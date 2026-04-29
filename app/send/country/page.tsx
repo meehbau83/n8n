@@ -37,7 +37,7 @@ export default function CountryPage() {
             <span className="text-5xl">🇻🇳</span>
             <div className="flex-1">
               <p className="text-lg font-bold text-foreground">Việt Nam</p>
-              <p className="text-sm text-muted-foreground">Vietnamese Dong (VNĐ)</p>
+              <p className="text-sm text-muted-foreground">Việt Nam Đồng (VNĐ)</p>
             </div>
             <CheckCircle2 className="h-6 w-6 text-primary" />
           </div>

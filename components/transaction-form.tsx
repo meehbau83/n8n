@@ -220,7 +220,7 @@ export function TransactionForm() {
       router.push('/history')
       router.refresh()
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Something went wrong')
+      setError(err instanceof Error ? err.message : 'Đã xảy ra lỗi. Vui lòng thử lại.')
     } finally {
       setLoading(false)
     }
@@ -228,9 +228,9 @@ export function TransactionForm() {
 
   // Step indicator data
   const steps = [
-    { key: 'amount', label: 'Amount', num: 1 },
-    { key: 'receive_method', label: 'Receiver', num: 2 },
-    { key: 'zelle_instruction', label: 'Payment', num: 3 },
+    { key: 'amount', label: 'Số tiền', num: 1 },
+    { key: 'receive_method', label: 'Người nhận', num: 2 },
+    { key: 'zelle_instruction', label: 'Thanh toán', num: 3 },
   ]
   const currentStepIndex = steps.findIndex(s => s.key === currentStep)
 

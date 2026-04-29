@@ -54,7 +54,7 @@ export function UploadReceiptButton({ transactionId }: { transactionId: string }
 
       router.refresh()
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Something went wrong')
+      setError(err instanceof Error ? err.message : 'Đã xảy ra lỗi. Vui lòng thử lại.')
     } finally {
       setLoading(false)
     }
