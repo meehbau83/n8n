@@ -1,24 +1,17 @@
+# v0 sandbox internal files
+__v0_runtime_loader.js
+__v0_devtools.tsx
+__v0_jsx-dev-runtime.ts
+.snowflake/
+.v0-trash/
+.vercel/
+next.user-config.*
+
+# Environment variables
+.env*.local
+
+# Common ignores
 node_modules
+.next/
 .DS_Store
-.tmp
-tmp
-dist
-coverage
-npm-debug.log*
-yarn.lock
-google-generated-credentials.json
-_START_PACKAGE
-.env
-.vscode/*
-!.vscode/extensions.json
-!.vscode/settings.default.json
-.idea
-nodelinter.config.json
-**/package-lock.json
-packages/**/.turbo
-.turbo
-*.tsbuildinfo
-*.swp
-CHANGELOG-*.md
-*.mdx
-build-storybook.log
+.vercel
