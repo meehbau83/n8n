@@ -57,7 +57,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Generate tracking link
-    const trackingLink = `${BASE_URL}/history?code=${transaction_code}`
+    const trackingLink = `${BASE_URL}/history?code=${encodeURIComponent(transaction_code)}`
 
     const results: { email?: boolean } = {}
 
