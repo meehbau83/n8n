@@ -78,7 +78,7 @@ export function EditReceiverInfoButton({ transaction }: EditReceiverInfoButtonPr
       }, 1500)
 
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to update information')
+      setError(err instanceof Error ? err.message : 'Không thể cập nhật thông tin. Vui lòng thử lại.')
     } finally {
       setLoading(false)
     }

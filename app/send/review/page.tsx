@@ -210,7 +210,7 @@ Cảm ơn bạn đã sử dụng Lato.`
       router.push('/history')
       router.refresh()
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Something went wrong')
+      setError(err instanceof Error ? err.message : 'Đã xảy ra lỗi. Vui lòng thử lại.')
     } finally {
       setLoading(false)
     }
@@ -307,7 +307,7 @@ Cảm ơn bạn đã sử dụng Lato.`
               <div className="flex justify-between">
                 <span className="text-muted-foreground text-xs">Phí</span>
                 <span className={state.fee_usd === 0 ? 'text-success text-xs' : 'text-xs'}>
-                  {state.fee_usd === 0 ? 'Miễn phí' : formatUSD(state.fee_usd)}
+                  {state.fee_usd === 0 ? 'Mi���n phí' : formatUSD(state.fee_usd)}
                 </span>
               </div>
               {!isCashUsd && state.exchange_rate > 0 && (

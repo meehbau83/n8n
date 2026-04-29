@@ -414,8 +414,8 @@ function HistoryPageContent() {
                 <Receipt className="h-8 w-8 text-muted-foreground" />
               </div>
             </div>
-            <h3 className="font-semibold text-lg">Chưa có giao dịch</h3>
-            <p className="text-muted-foreground mt-1">Tạo giao dịch đầu tiên để xem ở đây.</p>
+<h3 className="font-semibold text-lg">Chưa có giao dịch nào.</h3>
+              <p className="text-muted-foreground mt-1">Bạn có thể tìm giao dịch bằng mã giao dịch.</p>
           </div>
         ) : (
           <div className="space-y-3">
